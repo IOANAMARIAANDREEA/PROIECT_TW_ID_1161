@@ -9,26 +9,39 @@ Funcționalități principale:
 •	Încărcarea și gestionarea documentelor electronice în cadrul aplicației
 
 •	Clasificarea fișierelor în categorii, subcategorii sau tipuri predefinite
+
 •	Generarea automată a unui cod unic de înregistrare pentru fiecare document adăugat
+
 •	Filtrare avansată și căutare după metadate precum număr de înregistrare, dată, categorie sau denumire
+
 •	Conectarea aplicației la servicii externe (Dropbox / Google Drive) pentru stocarea și administrarea fișierelor
+
 •	Posibilitatea vizualizării și descărcării fișierelor direct din spațiul cloud
+
 •	Implementarea unei interfețe moderne React care comunică exclusiv prin API REST
 
 Tehnologii propuse:
 
 •	Backend: Node.js cu framework-ul Express pentru gestionarea logicii aplicației
+
 •	Bază de date: PostgreSQL, împreună cu un ORM precum Prisma sau TypeORM pentru mapare object-relational
+
 •	Frontend: React, utilizând React Router pentru navigare și Axios pentru comunicarea cu serverul
+
 •	Autentificare: JSON Web Tokens pentru sesiuni persistente și acces securizat
+
 •	Integrare cloud: Dropbox API sau Google Drive API pentru încărcarea și gestionarea documentelor externe
+
 •	Procesare fișiere: Middleware dedicat manipulării upload-urilor către cloud (ex. Multer
 Stadiu curent:
 
 Etapa 1 – specificații și configurare inițială a proiectului:
 
 •	au fost definite structura arhitecturală și responsabilitățile componentelor sistemului
+
 •	a fost elaborat modelul conceptual și relațional de date (entități precum Document, User, Category)
+
 •	au fost stabilite endpoint-urile REST principale pentru manipularea documentelor și autentificarea utilizatorilor
+
 •	a fost creat repository-ul Git și a fost configurată structura inițială a directoarelor pentru front-end, back-end și documentație
 
