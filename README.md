@@ -5,7 +5,9 @@ Acest proiect are ca obiectiv realizarea unei platforme web dedicate administră
 Funcționalități principale:
 
 •	Înregistrarea și autentificarea utilizatorilor prin mecanisme securizate pe bază de token (JWT)
+
 •	Încărcarea și gestionarea documentelor electronice în cadrul aplicației
+
 •	Clasificarea fișierelor în categorii, subcategorii sau tipuri predefinite
 •	Generarea automată a unui cod unic de înregistrare pentru fiecare document adăugat
 •	Filtrare avansată și căutare după metadate precum număr de înregistrare, dată, categorie sau denumire
