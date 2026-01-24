@@ -1,0 +1,207 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #101828;
+  background-color: #f5f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #175cd3;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: white;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.app-header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.app-header nav a,
+.app-header nav button {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #d0d5dd;
+  background: white;
+  color: #101828;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.app-header nav a.active {
+  background: #175cd3;
+  color: white;
+  border-color: #175cd3;
+}
+
+.app-main {
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background: #175cd3;
+  color: white;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #e4e7ec;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.error {
+  color: #d92d20;
+}
+
+.success {
+  color: #039855;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin: 0.5rem 0 1rem;
+  background: #f5f7fb;
+}
+
+.alert.success {
+  color: #027a48;
+  background: #ecfdf3;
+  border-color: #abefc6;
+}
+
+.alert.error {
+  color: #b42318;
+  background: #fef3f2;
+  border-color: #fecdca;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 24, 40, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: min(420px, 90vw);
+  box-shadow: 0 20px 50px rgba(16, 24, 40, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.modal-actions .secondary {
+  background: #f2f4f7;
+  color: #101828;
+}
+
+.dropbox-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dropbox-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.dropbox-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.file-history {
+  margin-top: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  background: #eaecf0;
+  margin: 1.5rem 0;
+}
